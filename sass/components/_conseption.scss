@@ -1,0 +1,55 @@
+
+
+  .conseption {
+    
+    & .item:not(:last-child) {
+      margin-bottom: 30px;
+    };
+  // display: flex;
+  // flex-direction: row;
+
+
+}
+
+
+.conseption p {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    // width: 270px;
+    line-height: 1.71;
+    
+  }
+
+  .conseption__icon {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
+
+.conseption__icon-backgr {
+  @include centredFlex();
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    background-color: var(--button-team-backgr);
+    border-radius: 4px;
+    // width: 270px;
+    // height: 120px;
+    width: 100%;
+    height: 120px;
+  }
+
+  .conseption__title {
+    color: var(--headers-color);
+  
+    font-weight: 700;
+    line-height: 14px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }

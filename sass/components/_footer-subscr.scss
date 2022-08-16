@@ -1,0 +1,39 @@
+
+.footer__subscr {
+    margin: 0 auto;
+  }
+  
+  .subscr-form {
+    display: flex;
+
+    .button--send-email {
+      @include centredFlex();
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        padding: 10px 0;
+
+        .social-icon {
+            margin-left: 10px;
+          }
+      }
+
+    }
+
+  .subscr-form__input {
+    padding: 15px;
+    width: 358px;
+    margin-right: 12px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: inherit;
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+     
+  
+  

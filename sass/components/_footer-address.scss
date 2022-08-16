@@ -1,0 +1,17 @@
+  
+  .footer__address {
+    margin-top: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+      }
+  }
+  
+  .footer__adress-link {
+    color: var(--white-color);
+    font-style: normal;
+    line-height: 1.71;
+
+    &--opacity {opacity: 0.6;}
+  }
+ 

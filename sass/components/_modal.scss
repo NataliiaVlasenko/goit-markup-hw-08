@@ -1,0 +1,44 @@
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+  
+    transform: translate(-50%, -50%) scale(1);
+  
+    transition: transform 250ms var(--transition-function);
+  }
+  
+  .close-btn {
+    position: absolute;
+    display: inline-block;
+  
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--white-color);
+    padding: 0;
+    cursor: pointer;
+  
+    transition: fill 250ms var(--transition-function);
+
+    &:hover .close-btn__icon {
+        fill: var(--accent-color);
+      }
+  }
+  .close-btn__icon {
+    display: block;
+    fill: rgba(0, 0, 0, 1);
+  
+    transition: fill 250ms var(--transition-function);
+  }
+  
+ 

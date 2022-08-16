@@ -1,0 +1,35 @@
+/* 
+список ссылок */
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    gap: 10px;
+  }
+  /* ссылка а */
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    /* outline: 1px solid red; */
+    transition: background-color 250ms var(--transition-function);
+
+&:hover, &:focus { border-radius: 50%;
+  background-color: var(--accent-color);
+};
+
+&:hover .social-icon, &:focus .social-icon { fill: var(--white-color);};
+
+}
+  
+  /* иконка svg */
+  .social-icon {
+    fill: var(--icon-fill);
+
+     }
+ 
+ 

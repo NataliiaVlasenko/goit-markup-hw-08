@@ -1,0 +1,55 @@
+
+.button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px var(--button-shadow);
+    border-radius: 4px;
+    border-width: 0;
+    line-height: 1.8;
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-function);
+
+    &:hover, &:focus {
+      background-color: var(--button-hover);
+    cursor: pointer;
+    }
+  }
+  // .button:hover,
+  // .button:focus {
+  //   background-color: var(--button-hover);
+  //   cursor: pointer;
+  // }
+
+  
+.filtr-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: var(--headers-color);
+  background-color: var(--button-team-backgr);
+  border-radius: 4px;
+  border-width: 0;
+  padding: 6px 22px;
+
+  transition-property: color, box-shadow, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-function);
+
+  &:hover, &:focus {color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    box-shadow: var(--card-shadow);};
+}
+

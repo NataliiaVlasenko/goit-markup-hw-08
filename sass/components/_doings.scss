@@ -1,0 +1,33 @@
+
+.doings {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.doings__item {
+    position: relative;
+  }
+
+  .doings__title {
+    display: block;
+  
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+  
+    padding: 27px 0;
+    margin: 0 auto;
+  
+    position: absolute;
+    display: block;
+  
+    background-color: var(--doings-cover);
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    min-width: 370px;
+  }
