@@ -8,7 +8,8 @@
 }
 
 .form {
-  width: 448px;
+  width: 370px;
+  // width: 448px;
   display: block;
 
   font-size: 12px;
@@ -84,11 +85,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
 
   text-align: center;
 
-  padding-left: 16px;
+  padding-left: 10px;
   gap: 7px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -103,7 +104,7 @@
 
 .form-acception__icon {
     position: absolute;
-    left: 12px;
+    left: 0px;
     width: 16px;
     height: 15px;
   

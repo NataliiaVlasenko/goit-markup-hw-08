@@ -1,32 +1,24 @@
 
   .page-header {
-
+   
     .container {
+
+      
       padding: 16px 10px 16px 15px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      
+      @media screen and (min-width: $desctop) {
+        padding: 0;
+      }
+
   }
   border-bottom: 1px solid var(--header-border);
 
-  .menu__icon:hover, .menu__icon:focus {
-    fill: var(--accent-color);
-  }
+  
   }
 
 
-  // .page-header {
-  //   border-bottom: 1px solid var(--header-border);
-  //   @include centredFlex();
-  //   flex-direction: row;
-    
-
-  //       .container {
-  //         @include centredFlex();
-  //         flex-direction: row;
-            
-  //         }
-  //     }
-
+  
     
     

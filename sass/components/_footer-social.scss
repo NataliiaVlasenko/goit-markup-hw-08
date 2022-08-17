@@ -7,8 +7,16 @@
 }
 
 .footer__social {
+  outline: 1px solid red;
+
+  @media screen and (max-width:$mobile){
+  margin-top: 60px;
   margin-left: 70px;
   margin-right: 93px;
+  
+
+  }
+  
 
   .social-media {
     background-color: var(--social-icon-bcgr-footer);

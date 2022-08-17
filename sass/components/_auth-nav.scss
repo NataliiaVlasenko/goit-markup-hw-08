@@ -1,26 +1,52 @@
 .auth-nav {
-    display: flex;
+  
+  @media screen and(max-width:$tablet){
+    display: none;}
+
     margin-left: auto;
     align-items: center;
-    gap: 30px;
+    
+    gap: 10px;
     line-height: 1;
   letter-spacing: 0.02em;
   font-weight: 500;
+
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    gap: 30px;
+  }
+
   }
 
   .auth-nav__auth-link {
+
+    
+    @media screen and(max-width:$tablet){
+      display: none;}
+
+
     display: flex;
     align-items: center;
     color: inherit;
-    padding: 32px 0;
+    
+    padding: 5px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-function);
 
     &:hover, &:focus {color: var(--accent-color);};
+
+    @media screen and (min-width: $desctop) {
+      padding: 32px 0;
+    }
+
   }
 
   .auth-nav__icon {
+
+    @media screen and(max-width:$tablet){
+      display: none;}
+
     display: inline-flex;
     margin-right: 10px;
     fill: currentColor;

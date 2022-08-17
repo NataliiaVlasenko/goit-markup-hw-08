@@ -11,8 +11,26 @@
   }
   
   .footer > .container {
+    text-align: center;
+    outline: 1px solid green;
+    
+    @media screen and (min-width:$tablet) {
+      
     display: flex;
+    align-items: top;
+    flex-direction: row;
+    justify-content: space-between;
+    
+          
+    
+    }
+
+    @media screen and (min-width:$desctop) {
+    
+
   }
- 
+}
+
+
   
  

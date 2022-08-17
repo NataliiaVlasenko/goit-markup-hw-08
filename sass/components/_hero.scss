@@ -6,11 +6,8 @@
       ),
       url(../images/Img_hero_bg.jpg);
     background-repeat: no-repeat;
-    max-width: 480px;
-    min-height: 400px;
-
-    // max-width: 1600px;
-    // min-height: 600px;
+    width: 100%;
+    
     margin-left: auto;
     margin-right: auto;
     background-position: center;
@@ -18,7 +15,22 @@
   
     text-align: center;
     padding: 118px 0;
-    // padding: 200px 0;
+    
+
+    @media screen and (min-width: $tablet) {
+width: $tablet;
+ padding: 200px 0;
+    }
+
+    @media screen and (min-width: $desctop) {
+      width: $desctop;
+
+      & .hero__title { font-size: 44px;
+      width: 696px;};
+      
+          }
+
+
   }
   .hero__title {
     color: var(--white-color);
@@ -27,7 +39,7 @@
     line-height: 1.62;
     text-transform: uppercase;
     font-size: 26px;
-    // font-size: 44px;
+   
     font-weight: 900;
     text-align: center;
   

@@ -1,15 +1,29 @@
 .site-nav {
+  
+  @media screen and(max-width:$tablet){
+    display: none;}
+
   color: var(--headers-color);
   display: flex;
-  margin-left: 93px;
+  
+  margin-left: 88px;
   gap: 50px;
   align-items: center;
   line-height: 1;
   letter-spacing: 0.02em;
   font-weight: 500;
+
+  @media screen and (min-width: $desctop) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav__link-nav {
+  
+  @media screen and(max-width:$tablet){
+    display: none;}
+
+
   padding: 32px 0;
   position: relative;
   transition-property: color;

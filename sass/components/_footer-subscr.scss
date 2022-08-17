@@ -1,12 +1,22 @@
 
 .footer__subscr {
+
+  @media screen and (max-width:$mobile){
     margin: 0 auto;
+    margin-top: 60px;}
+
+    outline: 1px solid red;
+
+   
+
   }
   
   .subscr-form {
-    display: flex;
+    display: block;
+    
 
     .button--send-email {
+      margin: auto;
       @include centredFlex();
         // display: flex;
         // align-items: center;
@@ -23,7 +33,7 @@
   .subscr-form__input {
     padding: 15px;
     width: 358px;
-    margin-right: 12px;
+    margin-bottom: 20px;
   
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;

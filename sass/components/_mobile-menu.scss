@@ -1,0 +1,20 @@
+.menu {
+    @media screen and (min-width:768px) {
+    display: none;
+       }
+//   outline: 1px solid red;  
+  margin-left: auto;
+}
+.menu__icon {
+
+&:hover, &:focus {
+    fill: var(--accent-color);
+    margin: 0 auto;
+
+
+    @media screen and (min-width:768px) {
+        display: none;
+           }
+  }
+
+}

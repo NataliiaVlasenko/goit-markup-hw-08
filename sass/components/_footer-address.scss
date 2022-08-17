@@ -1,6 +1,11 @@
-  
+.footer-box {
+  outline: 1px solid red;
+}
+
   .footer__address {
     margin-top: 20px;
+    outline: 1px solid red;
+    
 
     &:not(:last-child) {
         margin-bottom: 9px;

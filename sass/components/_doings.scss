@@ -1,9 +1,17 @@
 
-.doings {
+.section-doings {
+
+@media screen and (max-width:1200px){
+  display: none;
+  }
+
+}
+.doings{
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
+
 
 .doings__item {
     position: relative;
