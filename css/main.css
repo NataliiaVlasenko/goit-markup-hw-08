@@ -743,7 +743,6 @@ img {
 
 .footer > .container {
   text-align: center;
-  outline: 1px solid green;
 }
 @media screen and (min-width: 768px) {
   .footer > .container {
@@ -765,6 +764,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer > .container {
+    text-align: left;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: center;
@@ -773,8 +773,12 @@ img {
   }
 }
 
-.footer-box {
-  outline: 1px solid red;
+@media screen and (min-width: 1200px) {
+  .footer.logo {
+    font-size: 26px;
+    display: block;
+    margin-right: auto;
+  }
 }
 
 .footer__address {
@@ -808,7 +812,6 @@ img {
 }
 
 .footer__social {
-  outline: 1px solid red;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 480px) {
@@ -816,6 +819,12 @@ img {
     margin-top: 60px;
     margin-left: 70px;
     margin-right: 93px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    margin-left: 70px;
+    margin-top: 20px;
   }
 }
 .footer__social .social-media {
@@ -830,9 +839,6 @@ img {
   fill: var(--white-color);
 }
 
-.footer__subscr {
-  outline: 1px solid red;
-}
 @media screen and (max-width: 480px) {
   .footer__subscr {
     margin: 0 auto;
@@ -857,12 +863,23 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__subscr {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 0;
+    width: auto;
+    margin-left: auto;
+    margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscr-form {
+    margin: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -874,8 +891,9 @@ img {
             justify-content: center;
   }
   .subscr-form .subscr-form__input {
-    margin: 0;
+    margin-right: 10px;
     width: 358px;
+    margin-bottom: 0;
   }
 }
 .subscr-form .button--send-email {
@@ -910,6 +928,7 @@ img {
 @media screen and (min-width: 768px) {
   .subscr-form__input {
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 

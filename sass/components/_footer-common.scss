@@ -4,15 +4,16 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-
+    
     & .logo__part-color {
         color: var(--white-color);
+        // outline: 1px solid green;
       }
   }
   
   .footer > .container {
     text-align: center;
-    outline: 1px solid green;
+    // outline: 1px solid green;
     
     @media screen and (min-width:$tablet) {
       
@@ -26,13 +27,19 @@
        
      @media screen and (min-width:$desctop) 
      {
-      // align-items: center;
+      text-align:left;
       flex-wrap: nowrap;
       justify-content: center;
       
      }
 }
 
-
+.footer.logo {
+  @media screen and (min-width:$desctop){
+    font-size: 26px;
+    display: block;
+    margin-right: auto;
+  }
+}
   
  

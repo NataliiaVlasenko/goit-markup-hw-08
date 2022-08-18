@@ -7,15 +7,21 @@
 }
 
 .footer__social {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   margin-bottom: 60px;
 
   @media screen and (max-width:$mobile){
   margin-top: 60px;
   margin-left: 70px;
   margin-right: 93px;
-    }
+    };
   
+    @media screen and (min-width:$desctop) {
+
+      margin-left: 70px;
+      margin-top: 20px;
+
+      };
    
 
   .social-media {
