@@ -14,9 +14,9 @@
     padding: 60px 0;
     // padding: 94px 0;
   
-  // &--no-padding {
-  //   padding-bottom: 0;
-  // };
+  &--no-padding {
+    padding-top: 0;
+  };
 
   &--team {background-color: var(--button-team-backgr);};
   }

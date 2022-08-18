@@ -19,16 +19,18 @@
     display: flex;
     align-items: top;
     flex-direction: row;
-    justify-content: space-between;
-    
-          
-    
-    }
-
-    @media screen and (min-width:$desctop) {
-    
-
-  }
+    flex-wrap: wrap;
+    justify-content: space-around;
+                 
+        }
+       
+     @media screen and (min-width:$desctop) 
+     {
+      // align-items: center;
+      flex-wrap: nowrap;
+      justify-content: center;
+      
+     }
 }
 
 

@@ -7,14 +7,30 @@
 
     outline: 1px solid red;
 
-   
+    @media screen and (min-width:$tablet) {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 0 80px;
+    }
+    @media screen and (min-width:$desctop) {
 
+      padding: 0;
+      
+    }
   }
-  
-  .subscr-form {
-    display: block;
+  .subscr-form{
+    @media screen and (min-width:$desctop) {
     
-
+    @include centredFlex();
+  & .subscr-form__input {
+    margin:0; 
+    width: 358px;}
+  
+  }
+       
     .button--send-email {
       margin: auto;
       @include centredFlex();
@@ -26,13 +42,12 @@
         .social-icon {
             margin-left: 10px;
           }
-      }
+      }}
 
-    }
-
+    
   .subscr-form__input {
     padding: 15px;
-    width: 358px;
+    width: 100%;
     margin-bottom: 20px;
   
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -42,6 +57,8 @@
     font-family: inherit;
     background-color: inherit;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width:$tablet) { width: 450px;}
   }
   
      

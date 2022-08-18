@@ -24,12 +24,24 @@
         <a href="/" class="logo"
           >Web<span class="logo__part-color">Studio</span></a
         >
-      <div class="menu">
-        <svg class="menu__icon" width="40" height="40">
-          <use href="./images/sprite.svg#icon-menu"></use>
-        </svg>
-      </div>
-        <nav>
+          
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+              <svg  width="40" height="40" aria-label="переключатель мобильного меню">
+                <use class="icon-cross" href="./images/sprite.svg#icon-close"></use>
+                <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+               </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+
+              <ul class="short-social-list">
+                <li><a>Instagramm</a></li>
+                <li><a>Twitter</a></li>
+                <li><a>Facebook</a></li>
+                <li><a>LinkedIn</a></li>
+              </ul>
+            </div>
+
+              <nav>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link-nav site-nav__link-nav--current "
@@ -64,7 +76,11 @@
             >
           </li>
         </ul>
+
+        
+      
       </div>
+    </div>
     </header>
 
     <main>
@@ -129,7 +145,7 @@
         </div>
       </section>
 
-      <section class="section section-doings">
+      <section class="section section-doings section--no-padding">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
 
@@ -541,5 +557,6 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
   </body>
 </html>

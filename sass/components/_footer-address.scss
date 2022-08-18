@@ -1,15 +1,21 @@
 .footer-box {
   outline: 1px solid red;
+
 }
 
   .footer__address {
     margin-top: 20px;
-    outline: 1px solid red;
+        margin-bottom: 60px;
     
-
-    &:not(:last-child) {
+        & li:not(:last-child) {
         margin-bottom: 9px;
       }
+
+      @media screen and (min-width:$desctop) {
+      text-align: left;
+
+      }
+
   }
   
   .footer__adress-link {
@@ -20,3 +26,11 @@
     &--opacity {opacity: 0.6;}
   }
  
+
+
+  // @media screen and (min-width: $tablet) {
+    
+  // }
+  // @media screen and (min-width: $desctop) {
+    
+  // }
