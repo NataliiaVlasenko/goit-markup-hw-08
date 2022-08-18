@@ -7,8 +7,7 @@
     padding: 40px;
     width: 450px;
     height: 609px;
-    // width: 528px;
-    // height: 581px;
+    
     background-color: var(--white-color);
     box-shadow: var(--card-shadow);
     border-radius: 4px;
@@ -16,6 +15,13 @@
     transform: translate(-50%, -50%) scale(1);
   
     transition: transform 250ms var(--transition-function);
+
+@media screen and (min-width:$desctop)
+{ width: 528px;
+  height: 581px;
+  
+}
+
   }
   
   .close-btn {
