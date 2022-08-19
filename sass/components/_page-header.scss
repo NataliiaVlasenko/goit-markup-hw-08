@@ -1,7 +1,9 @@
 
   .page-header {
     position: relative;
+    // position: relative;
     // outline: 1px solid red;
+
     .container {
       
       // outline: 1px solid red;
@@ -11,10 +13,8 @@
       
       @media screen and (max-width:767px) {
         padding: 16px 10px 16px 15px;
-        
-        
+              
       };
-
 
       @media screen and (min-width: $tablet) {
         padding: 0 15px;
