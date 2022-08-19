@@ -1,31 +1,42 @@
-.auth-nav {
-  // outline: 1px solid red;
-  @media screen and(max-width:$tablet){
-    display: none;}
 
-    margin-left: auto;
-    align-items: center;
+.auth-nav { outline: 1px solid red;
+  @media screen and (max-width: 767px) {
+
     
-    gap: 10px;
-    line-height: 1;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-
-  @media screen and (min-width: $desctop) {
-    display: flex;
-    gap: 30px;
   }
 
+
+@media screen and (min-width: $tablet) {
+  
+  margin-left: auto;
+      align-items: center;
+      
+      gap: 10px;
+      line-height: 1;
+    letter-spacing: 0.02em;
+    font-weight: 500;
   }
 
-  .auth-nav__auth-link {
+@media screen and (min-width: $desctop) {
 
-    // outline: 1px solid red;
-    @media screen and(max-width:$tablet){
-      display: none;}
+  display: flex;
+  // margin-left: 300px;
+  align-items: center;
+  gap: 30px;
+
+  }
 
 
-    display: flex;
+}
+.auth-nav__auth-link {
+  @media screen and (max-width: 767px) {
+
+    
+  }
+
+
+@media screen and (min-width: $tablet) {
+  display: flex;
     align-items: center;
     color: inherit;
     
@@ -35,21 +46,19 @@
     transition-timing-function: var(--transition-function);
 
     &:hover, &:focus {color: var(--accent-color);};
+}
+@media screen and (min-width: $desctop) {
 
-    @media screen and (min-width: $desctop) {
-      padding: 32px 0;
-    }
 
-  }
+padding: 32px 0;}
 
-  .auth-nav__icon {
-
-    @media screen and(max-width:$tablet){
-      display: none;}
-
-    display: inline-flex;
-    margin-right: 10px;
-    fill: currentColor;
-  }
 
   
+  outline: 1px solid red;}
+
+.auth-nav__icon { outline: 1px solid red;
+  display: inline-flex;
+      margin-right: 10px;
+      fill: currentColor;
+}
+

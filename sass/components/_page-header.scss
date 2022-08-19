@@ -5,17 +5,31 @@
     .container {
       
       // outline: 1px solid red;
-      padding: 16px 10px 16px 15px;
       display: flex;
       align-items: center;
+      width: 100%;
       
-      @media screen and (min-width: $desctop) {
+      @media screen and (max-width:767px) {
+        padding: 16px 10px 16px 15px;
+        
+        
+      };
+
+
+      @media screen and (min-width: $tablet) {
         padding: 0 15px;
-      }
-  }
+        }
+
+      // @media screen and (min-width: $desctop) {
+       
+        
+      // };
+      };
+
+
   border-bottom: 1px solid var(--header-border);
 
-  
+
   }
 
 
