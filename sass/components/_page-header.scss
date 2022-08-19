@@ -1,38 +1,32 @@
+.page-header {
+  position: relative;
+  // position: relative;
+  // outline: 1px solid red;
 
-  .page-header {
-    position: relative;
-    // position: relative;
-    // outline: 1px solid red;
+  .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 15px;
 
-    .container {
-      
-      // outline: 1px solid red;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      
-      @media screen and (max-width:767px) {
-        padding: 16px 10px 16px 15px;
-              
-      };
+    @media screen and (max-width: 767px) {
+      padding: 16px 10px 16px 15px;
+    }
 
-      @media screen and (min-width: $tablet) {
-        padding: 0 15px;
-        }
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
-      // @media screen and (min-width: $desctop) {
-       
-        
-      // };
-      };
-
-
-  border-bottom: 1px solid var(--header-border);
-
-
+    @media screen and (min-width: $desctop) {
+      width: $desctop;
+      justify-content: space-between;
+    }
   }
 
-
-  
-    
-    
+  border-bottom: 1px solid var(--header-border);
+}
