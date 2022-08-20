@@ -1,9 +1,10 @@
 .page-header {
   position: relative;
-  // position: relative;
-  // outline: 1px solid red;
-
+  
   .container {
+
+    border-bottom: 1px solid var(--header-border);
+
     display: flex;
     align-items: center;
     width: 100%;
@@ -26,8 +27,9 @@
     @media screen and (min-width: $desctop) {
       width: $desctop;
       justify-content: space-between;
+      padding: 0 15px;
     }
   }
 
-  border-bottom: 1px solid var(--header-border);
+  
 }

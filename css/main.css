@@ -125,9 +125,9 @@ img {
 
 .page-header {
   position: relative;
-  border-bottom: 1px solid var(--header-border);
 }
 .page-header .container {
+  border-bottom: 1px solid var(--header-border);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,6 +161,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0 15px;
   }
 }
 
@@ -434,6 +435,9 @@ img {
     padding: 10px;
     text-align: center;
   }
+  .short-social-list li:hover {
+    cursor: pointer;
+  }
   .short-social-list li:first-child {
     padding-left: 0;
   }
@@ -448,9 +452,6 @@ img {
 }
 
 .hero {
-  background-color: var(--back2-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img_hero_bg.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hero_bg.jpg);
   background-repeat: no-repeat;
   width: 100%;
   margin-left: auto;
@@ -459,20 +460,42 @@ img {
   background-size: cover;
   text-align: center;
   padding: 118px 0;
+  background-color: var(--back2-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero_img_mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_img_mobile.jpg");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("../../images/hero_img_mobile_2x.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
     padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero_img_tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_img_tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("../../images/hero_img_tablet_2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     width: 1200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Img_hero_bg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Img_hero_bg.jpg");
   }
   .hero .hero__title {
     font-size: 44px;
     width: 696px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("../../images/Img_hero_bg_x2.jpg");
   }
 }
 
@@ -1076,6 +1099,7 @@ img {
 }
 
 .modal {
+  z-index: 1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1329,16 +1353,6 @@ img {
   border: 1px solid var(--card-border);
   width: 100%;
   padding: 20px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
 }
 
 .card__thumb {
@@ -1360,7 +1374,7 @@ img {
   font-size: 18px;
   line-height: 1.56;
   color: var(--white-color);
-  padding: 63px 24px;
+  padding: 77px 24px;
   opacity: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -1368,6 +1382,16 @@ img {
   transition: opacity 250ms var(--transition-function), background-color 250ms var(--transition-function), -webkit-transform 250ms var(--transition-function);
   transition: opacity 250ms var(--transition-function), background-color 250ms var(--transition-function), transform 250ms var(--transition-function);
   transition: opacity 250ms var(--transition-function), background-color 250ms var(--transition-function), transform 250ms var(--transition-function), -webkit-transform 250ms var(--transition-function);
+}
+@media screen and (min-width: 768px) {
+  .card__hover {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__hover {
+    padding: 63px 24px;
+  }
 }
 
 .card {
