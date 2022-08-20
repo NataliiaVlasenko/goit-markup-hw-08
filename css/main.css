@@ -120,6 +120,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: autos;
 }
 
 .page-header {
@@ -151,6 +152,7 @@ img {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 15px 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -307,8 +309,6 @@ img {
   .site-nav__link-nav {
     padding: 32px 0;
   }
-}
-@media screen and (min-width: 1200px) {
   .site-nav__link-nav--current {
     color: var(--accent-color);
   }
@@ -324,7 +324,6 @@ img {
     border-radius: 2px;
   }
 }
-
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -367,6 +366,7 @@ img {
 }
 
 .menu-container {
+  z-index: 1;
   font-size: 40px;
   display: block;
   background-color: white;
@@ -1329,13 +1329,23 @@ img {
   border: 1px solid var(--card-border);
   width: 100%;
   padding: 20px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .card__thumb {
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 370px;
+  width: 100%;
 }
 
 .card__hover {
