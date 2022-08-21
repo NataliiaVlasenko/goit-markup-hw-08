@@ -15,13 +15,13 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/hero_img_mobile.jpg");
+    url("../images/hero_img_mobile.jpg");
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url("../../images/hero_img_mobile_2x.jpg");
+      background-image: url("../images/hero_img_mobile_2x.jpg");
     }
   }
 
