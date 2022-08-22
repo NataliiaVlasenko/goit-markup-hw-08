@@ -24,74 +24,75 @@
         <a href="/" class="logo"
           >Web<span class="logo__part-color">Studio</span></a
         >
-        
-            <button type="button" class="menu-button js-open-menu" >
-              <svg  width="40" height="40" aria-label="переключатель мобильного меню">
-                <!-- <use class="icon-cross" href="./images/sprite.svg#icon-close"></use> -->
-                <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
-               </svg>
-            </button>
 
-            <nav class="menu-container js-menu-container" id="menu-container">
+        <button type="button" class="menu-button js-open-menu">
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <!-- <use class="icon-cross" href="./images/sprite.svg#icon-close"></use> -->
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
 
+        <nav class="menu-container js-menu-container" id="menu-container">
+          <button type="button" class="close-menu-button js-close-menu">
+            <svg
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#icon-close"
+              ></use>
+              <!-- <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use> -->
+            </svg>
+          </button>
 
-              <button type="button" class="close-menu-button js-close-menu" >
-                <svg  width="40" height="40" aria-label="переключатель мобильного меню">
-                  <use class="icon-cross" href="./images/sprite.svg#icon-close"></use>
-                  <!-- <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use> -->
-                 </svg>
-              </button>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link-nav">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link-nav site-nav__link-nav--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="/" class="site-nav__link-nav">Контакты</a>
+            </li>
+          </ul>
+          <ul class="auth-nav">
+            <li class="auth-nav__item">
+              <a href="emailto:info@devstudio.com" class="auth-nav__auth-link"
+                ><svg class="auth-nav__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="auth-nav__item">
+              <a href="tel:+380961111111" class="auth-nav__auth-link">
+                <svg class="auth-nav__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
 
-              <ul class="site-nav">
-                <li class="site-nav__item">
-                  <a href="./index.html" class="site-nav__link-nav  "
-                    >Студия</a
-                  >
-                </li>
-                <li class="site-nav__item">
-                  <a href="./portfolio.html" class="site-nav__link-nav site-nav__link-nav--current"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="site-nav__item">
-                  <a href="/" class="site-nav__link-nav">Контакты</a>
-                </li>
-              </ul>
-              <ul class="auth-nav">
-                <li class="auth-nav__item">
-                  <a href="emailto:info@devstudio.com" class="auth-nav__auth-link"
-                    ><svg class="auth-nav__icon" width="16" height="12">
-                      <use href="./images/sprite.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a
-                  >
-                </li>
-                <li class="auth-nav__item">
-                  <a href="tel:+380961111111" class="auth-nav__auth-link">
-                    <svg class="auth-nav__icon" width="10" height="16">
-                      <use href="./images/sprite.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-
-
-              <ul class="short-social-list">
-                <li><a>Instagramm</a></li>
-                <li><a>Twitter</a></li>
-                <li><a>Facebook</a></li>
-                <li><a>LinkedIn</a></li>
-              </ul>
-            </nav>
-            
-           
-        
-
-        
-      
+          <ul class="short-social-list">
+            <li><a>Instagramm</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Facebook</a></li>
+            <li><a>LinkedIn</a></li>
+          </ul>
+        </nav>
       </nav>
-    </div>
     </header>
 
     <main>
@@ -115,18 +116,16 @@
           <ul class="project-example">
             <li class="project-example__item">
               <a href="#" target="_blank">
-              <article class="card">
-                
+                <article class="card">
                   <div class="card__thumb">
                     <img
-                    srcset="./images/portf1_x2.jpg 740w,
-                    ./images/portf1.jpg 370w"
+                      srcset="
+                        ./images/portf1_x2.jpg 2x,
+                        ./images/portf1.jpg 1x
+                      "
                       src="./images/portf1.jpg"
                       alt="portfolio1"
-
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -140,21 +139,22 @@
                     <h2 class="project-example__title">Технокряк</h2>
                     <p class="project-example__def">Веб-сайт</p>
                   </div>
-                
-              </article>
-            </a>
+                </article>
+              </a>
             </li>
 
             <li class="project-example__item">
               <a href="#" target="_blank">
-              <article class="card">
-                
+                <article class="card">
                   <div class="card__thumb">
-                    <img srcset="./images/portf2_x2.jpg 740w, ./images/portf2.jpg 370w"
+                    <img
+                      srcset="
+                        ./images/portf2_x2.jpg 2x,
+                        ./images/portf2.jpg    1x
+                      "
                       src="./images/portf2.jpg"
                       alt="portfolio2"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -169,21 +169,22 @@
                     </h2>
                     <p class="project-example__def">Дизайн</p>
                   </div>
-        
-              </article>
+                </article>
               </a>
             </li>
 
             <li class="project-example__item">
               <a href="#" target="_blank">
-              <article class="card">
-               
+                <article class="card">
                   <div class="card__thumb">
-                    <img srcset="./images/portf3_x2.jpg 740w, ./images/portf3.jpg 370w"
+                    <img
+                      srcset="
+                        ./images/portf3_x2.jpg 2x,
+                        ./images/portf3.jpg    1x
+                      "
                       src="./images/portf3.jpg"
                       alt="portfolio3"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -196,21 +197,22 @@
                     <h2 class="project-example__title">Ресторан Seafood</h2>
                     <p class="project-example__def">Приложение</p>
                   </div>
-               
-              </article>
+                </article>
               </a>
             </li>
 
             <li class="project-example__item">
               <a href="#" target="_blank">
-              <article class="card">
-                
+                <article class="card">
                   <div class="card__thumb">
-                    <img srcset="./images/portf4_x2.jpg 740w, ./images/portf4.jpg 370w"
+                    <img
+                      srcset="
+                        ./images/portf4_x2.jpg 2x,
+                        ./images/portf4.jpg    1x
+                      "
                       src="./images/portf4.jpg"
                       alt="portfolio4"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -223,21 +225,22 @@
                     <h2 class="project-example__title">Проект Prime</h2>
                     <p class="project-example__def">Маркетинг</p>
                   </div>
-                
-              </article>
+                </article>
               </a>
             </li>
 
             <li class="project-example__item">
               <a href="#" target="_blank">
-              <article class="card">
-                
+                <article class="card">
                   <div class="card__thumb">
-                    <img srcset="./images/portf5_x2.jpg 740w, ./images/portf5.jpg 370w"
+                    <img
+                      srcset="
+                        ./images/portf5_x2.jpg 2x,
+                        ./images/portf5.jpg    1x
+                      "
                       src="./images/portf5.jpg"
                       alt="portfolio5"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -250,21 +253,22 @@
                     <h2 class="project-example__title">Проект Boxes</h2>
                     <p class="project-example__def">Приложение</p>
                   </div>
-                
-              </article>
+                </article>
               </a>
             </li>
 
             <li class="project-example__item">
               <a href="#" target="_blank">
-              <article class="card">
-                
+                <article class="card">
                   <div class="card__thumb">
-                    <img srcset="./images/portf6_x2.jpg 740w, ./images/portf6.jpg 370w"
+                    <img
+                      srcset="
+                        ./images/portf6_x2.jpg 2x,
+                        ./images/portf6.jpg    1x
+                      "
                       src="./images/portf6.jpg"
                       alt="portfolio6"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -279,21 +283,22 @@
                     </h2>
                     <p class="project-example__def">Веб-сайт</p>
                   </div>
-                
-              </article>
+                </article>
               </a>
             </li>
 
             <li class="project-example__item">
               <a href="#" target="_blank">
-              <article class="card">
-                
+                <article class="card">
                   <div class="card__thumb">
-                    <img srcset="./images/portf7_x2.jpg 740w, ./images/portf7.jpg 370w"
+                    <img
+                      srcset="
+                        ./images/portf7_x2.jpg 2x,
+                        ./images/portf7.jpg    1x
+                      "
                       src="./images/portf7.jpg"
                       alt="portfolio7"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -308,21 +313,22 @@
                     </h2>
                     <p class="project-example__def">Дизайн</p>
                   </div>
-                
-              </article>
+                </article>
               </a>
             </li>
 
             <li class="project-example__item">
-              
-                <a href="#" target="_blank">
-                  <article class="card">
+              <a href="#" target="_blank">
+                <article class="card">
                   <div class="card__thumb">
-                    <img srcset="./images/portf8_x2.jpg 740w, ./images/portf8.jpg 370w"
+                    <img
+                      srcset="
+                        ./images/portf8_x2.jpg 2x,
+                        ./images/portf8.jpg    1x
+                      "
                       src="./images/portf8.jpg"
                       alt="portfolio8"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -335,21 +341,22 @@
                     <h2 class="project-example__title">Проект LAB</h2>
                     <p class="project-example__def">Маркетинг</p>
                   </div>
-               
-              </article>
-                </a>
+                </article>
+              </a>
             </li>
 
             <li class="project-example__item">
-              
-                <a href="#" target="_blank">
-                  <article class="card">
+              <a href="#" target="_blank">
+                <article class="card">
                   <div class="card__thumb">
-                    <img srcset="./images/portf9_x2.jpg 740w, ./images/portf9.jpg 370w"
+                    <img
+                      srcset="
+                        ./images/portf9_x2.jpg 2x,
+                        ./images/portf9.jpg    1x
+                      "
                       src="./images/portf9.jpg"
                       alt="portfolio9"
-                      sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
-                      
+                      width="100%"
                     />
                     <p class="card__hover">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -362,9 +369,8 @@
                     <h2 class="project-example__title">Growing Business</h2>
                     <p class="project-example__def">Приложение</p>
                   </div>
-                
-              </article>
-                </a>
+                </article>
+              </a>
             </li>
           </ul>
         </div>

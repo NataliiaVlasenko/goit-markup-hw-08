@@ -3,8 +3,14 @@
   
   .section {
     padding: 60px 0;
-    // padding: 94px 0;
+    
   
+    @media screen and (min-width:$tablet) {
+  padding: 94px 0;
+      
+    }
+
+
   &--no-padding {
     padding-top: 0;
   };

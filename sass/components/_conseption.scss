@@ -49,6 +49,12 @@
 
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+text-align: left;
+font-size: 14px;
+  }
+
 }
 
 .conseption p {
