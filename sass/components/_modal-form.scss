@@ -113,6 +113,10 @@
     border: 2px solid var(--semi-black);
     border-radius: 4px;
     opacity: 1;
+
+    @media screen and (min-width: $desctop){
+      left: 30px;
+    }
   }
 
 .form-acception__check{

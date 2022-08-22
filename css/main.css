@@ -358,7 +358,6 @@ img {
 }
 
 .menu-container {
-  z-index: 1;
   font-size: 40px;
   display: block;
   background-color: white;
@@ -375,6 +374,7 @@ img {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1105,7 +1105,7 @@ img {
 }
 
 .modal {
-  z-index: 1;
+  z-index: 10;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1271,6 +1271,11 @@ img {
   border: 2px solid var(--semi-black);
   border-radius: 4px;
   opacity: 1;
+}
+@media screen and (min-width: 1200px) {
+  .form-acception__icon {
+    left: 30px;
+  }
 }
 
 .form-acception__check {

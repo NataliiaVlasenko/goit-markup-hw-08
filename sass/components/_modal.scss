@@ -1,5 +1,5 @@
 .modal {
-  z-index: 1;
+  z-index: 10;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,4 +45,6 @@
   fill: rgba(0, 0, 0, 1);
 
   transition: fill 250ms var(--transition-function);
+
+  
 }
