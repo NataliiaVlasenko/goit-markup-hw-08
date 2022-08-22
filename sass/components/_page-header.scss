@@ -1,9 +1,9 @@
 .page-header {
   position: relative;
-  
-  .container {
+  border-bottom: 1px solid var(--header-border);
+  .container-nav {
 
-    border-bottom: 1px solid var(--header-border);
+   
 
     display: flex;
     align-items: center;
