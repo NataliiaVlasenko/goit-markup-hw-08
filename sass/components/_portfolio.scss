@@ -42,11 +42,15 @@
     margin-top: var(--card-set-gap);
 
     width: 450px;
+  
     // flex-basis: calc(100% - 2 * var(--card-set-gap) / 3);
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       max-width: 354px;
       flex-basis: calc((100% - var(--card-set-gap)) / 2);
+
+
+
     }
 
     @media screen and (min-width: $desctop){
@@ -58,16 +62,12 @@
   }
   
   .card__content {
-    // @media screen and (min-width: $tablet) {
-    //   display: flex;
-    //   align-items: stretch;
-    // }
-
+   
     border: 1px solid var(--card-border);
     // width: 370px;
     width: 100%;
     padding: 20px 24px;
-       
+    flex-grow: 2;
     
   }
   
@@ -116,7 +116,10 @@
         
   .card {
      
-   
+       height: 100%;
+    // outline: 1px solid green;
+    display: flex;
+    flex-direction: column;
 
       transition: opacity 250ms var(--transition-function),
       box-shadow 250ms var(--transition-function), transform 250ms var(--transition-function);

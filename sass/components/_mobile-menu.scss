@@ -10,22 +10,9 @@
   background-color: transparent;
   display: inline-flex;
 
-  &:hover .icon-menu,
-  &:hover .icon-cross {
-    cursor: pointer;
+  &:hover .icon-menu{
+     cursor: pointer;
     fill: var(--accent-color);
-  }
-
-  .icon-cross {
-    display: none;
-  }
-
-  &.is-open .icon-cross {
-    display: block;
-  }
-
-  &.is-open .icon-menu {
-    display: none;
   }
 }
 
@@ -43,11 +30,11 @@
     position: absolute;
     width: 100%;
     left: 0;
-    top: 100%;
+    top: 0;
 
     height: 796px;
 
-    padding: 0 40px;
+    padding: 48px 40px;
 
     &.is-open {
       display: block;
@@ -64,7 +51,24 @@
   }
 }
 
-.icon-cross,
+.close-menu-button {
+  position: absolute;
+  right:15px;
+  top: 15px;
+  border:none;
+  background-color: transparent;
+
+  &:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+
 .icon-menu {
   margin: 0 auto;
   @media screen and (min-width: 768px) {

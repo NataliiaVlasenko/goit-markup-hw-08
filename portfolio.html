@@ -25,16 +25,26 @@
           >Web<span class="logo__part-color">Studio</span></a
         >
         
-            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <button type="button" class="menu-button js-open-menu" >
               <svg  width="40" height="40" aria-label="переключатель мобильного меню">
-                <use class="icon-cross" href="./images/sprite.svg#icon-close"></use>
+                <!-- <use class="icon-cross" href="./images/sprite.svg#icon-close"></use> -->
                 <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
                </svg>
             </button>
-            <nav class="menu-container" id="menu-container" data-menu>
+
+            <nav class="menu-container js-menu-container" id="menu-container">
+
+
+              <button type="button" class="close-menu-button js-close-menu" >
+                <svg  width="40" height="40" aria-label="переключатель мобильного меню">
+                  <use class="icon-cross" href="./images/sprite.svg#icon-close"></use>
+                  <!-- <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use> -->
+                 </svg>
+              </button>
+
               <ul class="site-nav">
                 <li class="site-nav__item">
-                  <a href="./index.html" class="site-nav__link-nav"
+                  <a href="./index.html" class="site-nav__link-nav  "
                     >Студия</a
                   >
                 </li>
@@ -65,6 +75,7 @@
                   >
                 </li>
               </ul>
+
 
               <ul class="short-social-list">
                 <li><a>Instagramm</a></li>
@@ -129,8 +140,9 @@
                     <h2 class="project-example__title">Технокряк</h2>
                     <p class="project-example__def">Веб-сайт</p>
                   </div>
-                </a>
+                
               </article>
+            </a>
             </li>
 
             <li class="project-example__item">
