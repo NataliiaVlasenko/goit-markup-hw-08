@@ -10,14 +10,13 @@
   background-color: transparent;
   display: inline-flex;
 
-  &:hover .icon-menu{
-     cursor: pointer;
+  &:hover .icon-menu {
+    cursor: pointer;
     fill: var(--accent-color);
   }
 }
 
 .menu-container {
-  
   // outline: 1px solid red;
 
   font-size: 40px;
@@ -41,8 +40,7 @@
       z-index: 1;
       // height: 100%;
       overflow-y: auto;
-      }
-
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -57,9 +55,9 @@
 
 .close-menu-button {
   position: absolute;
-  right:15px;
+  right: 15px;
   top: 15px;
-  border:none;
+  border: none;
   background-color: transparent;
 
   &:hover {
@@ -71,7 +69,6 @@
     display: none;
   }
 }
-
 
 .icon-menu {
   margin: 0 auto;
@@ -101,7 +98,9 @@
     padding: 10px;
     text-align: center;
 
-    &:hover {cursor: pointer;}
+    &:hover {
+      cursor: pointer;
+    }
 
     &:first-child {
       padding-left: 0;

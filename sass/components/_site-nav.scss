@@ -1,82 +1,74 @@
-
-.site-nav { 
+.site-nav {
   // outline: 1px solid green;
 
   @media screen and (max-width: 767px) {
-   margin-bottom: 302px; 
-   color: var(--black);
+    margin-bottom: 302px;
+    color: var(--black);
   }
 
+  @media screen and (min-width: $tablet) {
+    color: var(--headers-color);
+    display: flex;
 
-@media screen and (min-width: $tablet) {
-  color: var(--headers-color);
-  display: flex;
-  
-  margin-right: 88px;
-  gap: 50px;
-  align-items: center;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  font-weight: 500;
+    margin-right: 88px;
+    gap: 50px;
+    align-items: center;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
 
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 93px;
+    margin-right: 302px;
+  }
 }
 
-@media screen and (min-width: $desctop) {
+.site-nav__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
 
-display: flex;
-flex-grow: 1;
-  margin-left: 93px;
-  margin-right: 302px;
+    & :last-child {
+      margin-bottom: 0;
+    }
+  }
 }
-
-}
-
-
-
-.site-nav__item{
-@media screen and (max-width: 767px) {
-  
-margin-bottom: 32px;
-
-& :last-child {margin-bottom: 0;}
- }
-}
-
 
 .site-nav__link-nav {
-
   font-weight: 500;
   position: relative;
   // outline: 1px solid green;
 
-  &:hover, &:focus {color: var(--accent-color);}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-  &--current {
-      color: var(--accent-color);
-          }
-        
-
-@media screen and (min-width: $tablet) {
-  
-  padding: 32px 0;
   &--current {
     color: var(--accent-color);
+  }
 
-    &::after {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      display: block;
-      width: 100%;
-      height: 4px;
-      content: " ";
-      background-color: var(--accent-color);
-      border-radius: 2px;
+  @media screen and (min-width: $tablet) {
+    padding: 32px 0;
+    &--current {
+      color: var(--accent-color);
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        content: " ";
+        background-color: var(--accent-color);
+        border-radius: 2px;
+      }
     }
-}
-  
-}
+  }
 
-@media screen and (min-width: $desctop) {
-  
-}}
+  @media screen and (min-width: $desctop) {
+  }
+}
